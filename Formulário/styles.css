@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(185, 164, 205);
+    font-size: 15px;
+    font-family: verdana;
+    width: 100%; /* A porcentagem (%) são unidades relativas ao elemento 
+    ancestral mais próximo. Se colocarmos a largura dessa imagem para 100%, 
+    significa que ela ocupará 100% do espaço disponível. Isso significa que 
+    se a nossa div ter 200px, a imagem ocupará 200px de largura (100%).*/
+    height: 100vh; /* vh para altura e vw para largura (elas significam viewport, 
+    ou seja, usam o tamanho total do nosso dispositivo). Uma altura de 100vh corresponde
+    a 100% da página total, do nosso corpo do documento body. se colocarmos a largura da 
+    imagem para 100vw, independente de qual será o tamanho da  nossa div, 
+    a imagem ocupará toda a nossa tela, pois a viewport significa toda a página.*/
+    color: black;
+    margin: 0;
+}
+
+h1, p {
+    text-align: center;
+    margin: 1em auto; /* em usa o tamanho da fonte do elemento pai e rem do html*/
+}
+
+form {
+    width: 50vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    /*
+        margin: top right bottom left 
+        margin: 0; margem de todos os lados
+        margin: 0 1px; top/bottom = 0; right/left = 1px
+        margin: 0 1px 2px; top = 0; right/left = 1px; bottom = 2px 
+        margin: 0 1px 2px 3px; top = 0; right= 1px; bottom = 2px; left = 3px 
+    */
+}
+
+fieldset {
+    border: none;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block; /* block = todos os elementos ficam em linhas diferentes.
+                        inline = todos os elementos ficam numa única linha. */
+    margin: 1rem 0;
+}
+
+input, textarea, select {
+    margin: 5px 0 0 0;
+    width: 100%;
+    min-height: 1.5em;
+}
+
+input, textarea {
+    background-color: #8aeee5;
+    border: 1px solid #8aeee5;
+    color: black;
+  }
+
+::placeholder {
+    color: rgb(185, 164, 205)
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    display: inline;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1rem;
+    background-color: #8aeee5;
+    border-color: #8aeee5;
+    min-width: 250px;
+    cursor: pointer;
+}
+
+
+
+
