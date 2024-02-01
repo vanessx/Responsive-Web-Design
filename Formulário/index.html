@@ -11,30 +11,37 @@
     </header>
     <main>
       <form id="survey-form" method="post">
-       <label for="name">Insira o seu nome: 
-        <input type="text" id="name" placeholder="João, Maria..." required/></label>
-       <label for="email">Insira o seu email: 
-        <input id="email" type="email" placeholder="abcdefg@xxxxx.com" required/></label>
-       <label for="number">Insira a sua idade: 
-        <input type="number" id="number" min="16" max="100" placeholder="21, 35..." required/></label>
-       <label for="dropdown">Qual é o seu gênero?
-       <select id="dropdown">
-        <option value="">Selecione aqui</option>
-        <option value="1">Feminino</option>
-        <option value="2">Masculino</option>
-        <option value="3">Outro</option>
-       </select>
-       </label>
-        <legend>Qual o seu tipo de personalidade:</legend>
-          <label for="extro"><input id="extro" type="radio" name="personalidade" class="inline" checked> Extrovertido</input>
-          <label for="intro"><input id="intro" type="radio" name="personalidade" class="inline"> Introvertido</input>
-        <div>Qual é o seu MBTI?
-          <label for="intj"><input class="inline" id="intj" type="checkbox" required />INTJ</label>
-          <label for="intp"><input class="inline" id="intp" type="checkbox" required />INTP</label>
-          <label for="entj"><input class="inline" id="entj" type="checkbox" required />ENTJ</label>
-          <label for="entp"><input class="inline" id="entp" type="checkbox" required />ENTP</label>
-        </div>
-        <label for="submit"> <input type="submit" id="submit" /></label>
+        <fieldset>
+          <legend>Dados pessoais</legend>
+          <label id="name-label">Insira o seu nome: <input type="text" id="name" placeholder="João, Maria..." required/></label>
+           <label id="email-label">Insira o seu email: <input type="email" id="email" placeholder="abcdefg@xxxxx.com" required/></label>
+           <label id="number-label">Insira a sua idade: <input type="number" id="number" min="16" max="100" placeholder="21, 35..." required/></label>
+           <label for="dropdown">Qual é o seu gênero?
+            <select id="dropdown">
+              <option value="">Selecione aqui</option>
+              <option value="1">Feminino</option>
+              <option value="2">Masculino</option>
+              <option value="3">Outro</option>
+            </select>
+           </label>
+        </fieldset>
+        <fieldset>
+          <legend>Qual o seu tipo de personalidade:</legend>
+            <label for="extro"><input id="extro" type="radio" value="ex" name="personalidade" class="inline" checked> Extrovertido</input>
+            <label for="intro"><input id="intro" type="radio" value="ïn" name="personalidade" class="inline"> Introvertido</input>
+        </fieldset>
+        <fieldset>
+          <legend>Qual é o seu MBTI?</legend>
+          <label><input class="inline" value="mbti" type="checkbox"/>INTJ</label>
+          <label><input class="inline" value="mbti" type="checkbox"/>INTP</label>
+          <label><input class="inline" value="mbti" type="checkbox"/>ENTJ</label>
+          <label><input class="inline" value="mbti" type="checkbox"/>ENTP</label>
+          <label>
+            Como se sente hoje?
+            <textarea rows="5" cols="30" id="comments" placeholder="Hoje sinto-me..."></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" id="submit" value="Enviar"/>
       </form>
     </main>
   </body>
