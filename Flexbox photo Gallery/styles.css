@@ -33,7 +33,7 @@
     width: 100%;
     max-width: 350px;
     height: 300px;
-    object-fit: cover;
+    object-fit: cover; /* object-fit: center  (coloca as imagens do mesmo tamanho e com a proporção real, caso as imagens tenham tamanhos diferentes) */
     border-radius: 10px;
   }
   
