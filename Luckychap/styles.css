@@ -21,8 +21,9 @@ img {
     margin: auto;
 }
 
-#tribute-info {
-    margin: auto;
+#image {
+    max-width: 100%; 
+    text-align: center;
 }
 
 #img-caption {
@@ -31,8 +32,27 @@ img {
     color: grey;
 }
 
+#tribute-info {
+    margin: auto;
+}
+
 #intro {
     width: 600px;
     margin: 20px auto 70px auto;
 }
 
+ul {
+    line-height: 1.6;
+    margin: 0 auto 50px auto;
+}
+
+li {
+    margin: 16px 0;
+    display: list-item;
+    
+}
+
+#footer {
+    text-align: center;
+    color: gray;
+}
